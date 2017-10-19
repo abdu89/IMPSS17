@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleMovement : MonoBehaviour {
+public class SunMovement : MonoBehaviour {
 
-	public static float movementSpeed = 0.5f;
-	//public float lifeTime = 6f;
+	public static float movementSpeed = 0.01f;
+	//public float lifeTime = 6f
 
 	void Start () {
 		//Destroy(gameObject, lifeTime);
@@ -14,7 +14,7 @@ public class ObstacleMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		Vector3 currentPosition = transform.position;
-		transform.position = new Vector3(currentPosition.x , currentPosition.y,
+		transform.position = new Vector3(currentPosition.x, currentPosition.y,
 			currentPosition.z - movementSpeed);
 	}
 

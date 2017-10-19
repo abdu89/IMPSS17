@@ -24,4 +24,11 @@ public class FlappyColisionChecker : MonoBehaviour {
 		Debug.Log ("collision");
 		Time.timeScale = 0f;
 	}
+
+	/*void OnTriggerEnter(Collider other)
+	{
+	SceneManager.LoadScene ("Gameover");
+
+	}*/
+
 }
