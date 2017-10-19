@@ -12,7 +12,7 @@ public class AsteroidSpawner : MonoBehaviour {
 	//public Vector3 SpawnPosition;
 
 	void Start () {
-		
+		Time.timeScale = 1;
 	}
 		
 	// Update is called once per frame

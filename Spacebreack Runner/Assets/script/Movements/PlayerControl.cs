@@ -20,7 +20,7 @@ public class PlayerControl : MonoBehaviour {
 			if (Input.GetKey (KeyCode.RightArrow))
 				body.AddForce (Vector3.right* 10);
 			if (Input.GetKey (KeyCode.UpArrow))
-				body.AddForce (Vector3.up * 10);
+				body.AddForce (Vector3.up * 15);
 		}
 	}
 
