@@ -16,11 +16,13 @@ public class PlayerControl : MonoBehaviour {
 		void Update () {
 
 			if (Input.GetKey (KeyCode.LeftArrow))
-				body.AddForce (Vector3.left * 10);
+				body.AddForce (Vector3.left * 30);
 			if (Input.GetKey (KeyCode.RightArrow))
-				body.AddForce (Vector3.right* 10);
+				body.AddForce (Vector3.right* 30);
 			if (Input.GetKey (KeyCode.UpArrow))
-				body.AddForce (Vector3.up * 15);
+				body.AddForce (Vector3.up * 30);
+			if (Input.GetKey (KeyCode.DownArrow))
+			 	body.AddForce (Vector3.down * 15);
 		}
 	}
 

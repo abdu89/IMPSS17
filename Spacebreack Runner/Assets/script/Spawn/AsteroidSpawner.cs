@@ -6,8 +6,8 @@ public class AsteroidSpawner : MonoBehaviour {
 
 	public GameObject toSpawn;
 	private int counter = 0;
-	private int counterMax = 10;
-	//private int spawnMin, spawnMax;
+	private int counterMax = 15;
+	private int spawnMin, spawnMax;
 
 	//public Vector3 SpawnPosition;
 
@@ -21,14 +21,14 @@ public class AsteroidSpawner : MonoBehaviour {
 		//Debug.Log (counter);
 		if (counter == counterMax) {
 
-			//int radom = Random.Range (spawnMin, spawnMax);
+			int radom = Random.Range (spawnMin, spawnMax);
 
 			counter = 0;
-			counterMax = Random.Range (8,15);
+			counterMax = Random.Range (2, 15);
 			//Spawn cube herer
-			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (50,60), Random.Range (1,9), 300), Quaternion.identity);
+			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (48, 58), Random.Range (-1, 10),Random.Range (66, 300)), Quaternion.identity);
 			Destroy (t, 30f);
-			//Debug.Log (t);
+			Debug.Log (t);
 		}
 
 	}

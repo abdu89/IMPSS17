@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SunMovement : MonoBehaviour {
 
-	public static float movementSpeed = 0.01f;
+	public static float movementSpeed = 0.0559f;
 	//public float lifeTime = 6f
 
 	void Start () {

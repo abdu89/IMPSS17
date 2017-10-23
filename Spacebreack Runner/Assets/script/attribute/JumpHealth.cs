@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class JumpHealth : MonoBehaviour {
 
@@ -19,14 +20,15 @@ public class JumpHealth : MonoBehaviour {
 	{
 		
 		healthBar.fillAmount -= damage;
+		if (healthBar.fillAmount == 0)
+		{
+			Die ();
+		}
 	}
 
 
 
-	/*if (healthBar.fillAmount == 0)
-		{
-			Die ();
-		}*/
+
 	
 
 
@@ -37,10 +39,10 @@ public class JumpHealth : MonoBehaviour {
 	}
 
 
-	/*void Die()
+	void Die()
 	{
-
-	}*/
+		SceneManager.LoadScene ("Erste Scene3");
+	}
 
 	public void OnTriggerEnter(Collider other)
 	{
@@ -50,18 +52,24 @@ public class JumpHealth : MonoBehaviour {
 			Debug.Log ("no health");
 		}
 
+		if (other.gameObject.tag == "fa") 
+		{
+			SceneManager.LoadScene ("Win");
+		}
 
+		if (other.gameObject.tag == "gi") 
+		{
+		
+			GetDamage (1.0f);
+			Debug.Log ("no health");
 
-		//if (counter == counterMax) {
+		}
 			if (other.gameObject.tag == "brett") {   
-				//counter++;
 	
 				GetHealth (1.0f);
 				Debug.Log ("give health");
-				//counter = 0;
 
 			}
-		//}
 	}
 
 	IEnumerator WaitToDamage()

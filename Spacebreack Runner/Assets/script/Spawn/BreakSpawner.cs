@@ -6,7 +6,7 @@ public class BreakSpawner : MonoBehaviour {
 
 	public GameObject toSpawn;
 	private int counter = 0;
-	private int counterMax = 200;
+	private int counterMax = 800;
 	private int spawnMin, spawnMax;
 
 	//public Vector3 SpawnPosition;
@@ -24,9 +24,9 @@ public class BreakSpawner : MonoBehaviour {
 			int radom = Random.Range (spawnMin, spawnMax);
 
 			counter = 0;
-			counterMax = Random.Range (55, 190);
+			counterMax = Random.Range (180, 350);
 			//Spawn cube herer
-			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (50, 60), Random.Range (1, 5),Random.Range (10, 200)), Quaternion.identity);
+			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (48, 58), Random.Range (1, 10),Random.Range (0, 300)), Quaternion.identity);
 			Destroy (t, 30f);
 			Debug.Log (t);
 		}

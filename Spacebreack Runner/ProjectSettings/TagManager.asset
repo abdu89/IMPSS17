@@ -7,6 +7,9 @@ TagManager:
   - Fire
   - brett
   - asteroid
+  - as
+  - fa
+  - gi
   layers:
   - Default
   - TransparentFX
