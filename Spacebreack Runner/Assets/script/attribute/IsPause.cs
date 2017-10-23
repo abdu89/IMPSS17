@@ -21,7 +21,7 @@ public class IsPause : MonoBehaviour {
 		Time.timeScale = 0;
 		//Cursor.lockState = CursorLockMode.None;
 		//Cursor.visible = true;
-		ObstacleMovement1.movementSpeed = 0;
+		AsteroidMovement.movementSpeed = 0;
 
 		pauseButton.SetActive (false);
 		onPausePanel.SetActive (true);
@@ -31,7 +31,7 @@ public class IsPause : MonoBehaviour {
 		Time.timeScale = 1;
 		//Cursor.lockState = CursorLockMode.None;
 		//Cursor.visible = true;
-		ObstacleMovement1.movementSpeed = 0.05f;
+		AsteroidMovement.movementSpeed = 0.05f;
 
 		pauseButton.SetActive (true);
 		onPausePanel.SetActive (false);
