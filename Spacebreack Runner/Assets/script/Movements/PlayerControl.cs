@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerControl : MonoBehaviour {
+
 
 		Rigidbody body;
 		// Use this for initialization
@@ -14,6 +16,9 @@ public class PlayerControl : MonoBehaviour {
 
 		// Update is called once per frame
 		void Update () {
+		
+
+
 
 			if (Input.GetKey (KeyCode.LeftArrow))
 				body.AddForce (Vector3.left * 30);
@@ -24,5 +29,9 @@ public class PlayerControl : MonoBehaviour {
 			if (Input.GetKey (KeyCode.DownArrow))
 			 	body.AddForce (Vector3.down * 15);
 		}
-	}
+
+
+
+
+		}
 
