@@ -26,12 +26,19 @@ public class AsteroidSpawner : MonoBehaviour {
 			counter = 0;
 			counterMax = Random.Range (2, 15);
 			//Spawn cube herer
-			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (48, 58), Random.Range (-1, 10),Random.Range (66, 300)), Quaternion.identity);
-			Destroy (t, 30f);
-			Debug.Log (t);
+			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (48, 58), Random.Range (-1, 10), Random.Range (66, 300)), Quaternion.identity);
+			//Destroy (t, 30f);
+			//Debug.Log (t);
 		}
-
+	}
+		
+	void DestroyComponent()
+	{
+		// Removes the rigidbody from the game object
+		Destroy(GetComponent<Rigidbody>());
 	}
 
 }
+
+
  

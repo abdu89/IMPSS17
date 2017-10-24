@@ -60,6 +60,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4012710165294094}
+  - component: {fileID: 65336281779855610}
   m_Layer: 0
   m_Name: AsteroidObjekt
   m_TagString: Untagged
@@ -188,6 +189,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!65 &65336281779855610
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1510485442528888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65824078590405020
 BoxCollider:
   m_ObjectHideFlags: 1
