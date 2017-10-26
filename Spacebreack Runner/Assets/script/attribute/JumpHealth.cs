@@ -9,6 +9,9 @@ public class JumpHealth : MonoBehaviour {
 	public Image healthBar;
 	private int counter = 0;
 	private int counterMax = 50;
+	public GameObject playerDamage;
+	public GameObject damagePanel;
+
 
 	// Use this for initialization
 	void Start () {
@@ -41,7 +44,7 @@ public class JumpHealth : MonoBehaviour {
 
 	void Die()
 	{
-		SceneManager.LoadScene ("Erste Scene3");
+		SceneManager.LoadScene ("GameOverScene");
 	}
 
 	public void OnTriggerEnter(Collider other)
@@ -49,7 +52,12 @@ public class JumpHealth : MonoBehaviour {
 		if (other.gameObject.tag == "as") 
 		{
 			GetDamage (0.10f);
-			Debug.Log ("no health");
+		//	Instantiate (playerDamage, transform.position, Quaternion.Euler (new Vector3 (0,0 , 0)));
+			Debug.Log ("VORSICHT!");
+			//Panel anmachen
+			damagePanel.SetActive (true);  
+			//methode um auszuschalten 
+			StartCoroutine (WaitToPanel());
 		}
 
 		if (other.gameObject.tag == "fa") 
@@ -82,5 +90,14 @@ public class JumpHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		StartCoroutine (WaitToDamage());
+
 	}
-}
+
+	//Methode um das Panel wieder auszuschalten
+	IEnumerator WaitToPanel()
+	{
+		yield return new WaitForSeconds (0.1f);
+		damagePanel.SetActive (false);
+
+	}
+	}

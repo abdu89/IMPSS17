@@ -11,6 +11,7 @@ TagManager:
   - fa
   - gi
   - bullet
+  - DAMAGE
   layers:
   - Default
   - TransparentFX
