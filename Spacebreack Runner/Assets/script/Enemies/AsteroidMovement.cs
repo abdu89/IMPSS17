@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class AsteroidMovement : MonoBehaviour {
 
-	public static float movementSpeed = 0.7f;
+
+	public static float movementSpeed = 1.0f;
     //public float lifeTime = 6f;
 
 	void Start () {
         //Destroy(gameObject, lifeTime);
+
 	}
 
     void FixedUpdate()
     {
+		//movementSpeed=Random.Range(1.0f,5.0f);
         Vector3 currentPosition = transform.position;
         transform.position = new Vector3(currentPosition.x, currentPosition.y,
 			currentPosition.z - movementSpeed);
