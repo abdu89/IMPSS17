@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidMovement : MonoBehaviour {
 
 
-	public static float movementSpeed = 1.0f;
+	public float movementSpeed = 1.0f;
     //public float lifeTime = 6f;
 
 	void Start () {

@@ -21,13 +21,13 @@ public class PlayerControl : MonoBehaviour {
 
 
 			if (Input.GetKey (KeyCode.LeftArrow))
-				body.AddForce (Vector3.left * 30);
+				body.AddForce (Vector3.left * 100);
 			if (Input.GetKey (KeyCode.RightArrow))
-				body.AddForce (Vector3.right* 30);
+				body.AddForce (Vector3.right* 100);
 			if (Input.GetKey (KeyCode.UpArrow))
-				body.AddForce (Vector3.up * 30);
+				body.AddForce (Vector3.up * 100);
 			if (Input.GetKey (KeyCode.DownArrow))
-			 	body.AddForce (Vector3.down * 15);
+			 	body.AddForce (Vector3.down * 100);
 		}
 
 

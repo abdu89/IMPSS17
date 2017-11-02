@@ -19,7 +19,7 @@ public class damageScript : MonoBehaviour {
 		Time.timeScale = 0;
 		//Cursor.lockState = CursorLockMode.None;
 		//Cursor.visible = true;
-		AsteroidMovement.movementSpeed = 1;
+		//AsteroidMovement.movementSpeed = 1;
 
 		damagePanel.SetActive (false);
 		damagePanel.SetActive (true);

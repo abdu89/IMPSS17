@@ -16,7 +16,6 @@ public class JumpHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		healthBar.fillAmount = 1f;
-
 	}
 
 	void GetDamage(float damage)
@@ -27,6 +26,8 @@ public class JumpHealth : MonoBehaviour {
 		{
 			Die ();
 		}
+
+
 	}
 
 
