@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerTouch : MonoBehaviour
 {
 	Rigidbody body;
-	public float speed = 0.04F;
+	public float speed = 10.0F;
 
 	void Start () {
 
