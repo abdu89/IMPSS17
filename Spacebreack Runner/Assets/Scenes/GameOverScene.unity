@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1343674333}
         m_MethodName: sceneChangeTo
         m_Mode: 5
         m_Arguments:

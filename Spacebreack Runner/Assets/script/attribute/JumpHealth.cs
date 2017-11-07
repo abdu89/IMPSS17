@@ -11,6 +11,7 @@ public class JumpHealth : MonoBehaviour {
 	private int counterMax = 50;
 	public GameObject playerDamage;
 	public GameObject damagePanel;
+	public GameObject healthPanel;
 
 
 	// Use this for initialization
@@ -60,6 +61,16 @@ public class JumpHealth : MonoBehaviour {
 			//methode um auszuschalten 
 			StartCoroutine (WaitToPanel());
 		}
+		if (other.gameObject.tag == "b") 
+		{
+			GetDamage (0.10f);
+			//	Instantiate (playerDamage, transform.position, Quaternion.Euler (new Vector3 (0,0 , 0)));
+			Debug.Log ("VORSICHT!");
+			//Panel anmachen
+			damagePanel.SetActive (true);  
+			//methode um auszuschalten 
+			StartCoroutine (WaitToPanel());
+		}
 
 		if (other.gameObject.tag == "fa") 
 		{
@@ -77,7 +88,10 @@ public class JumpHealth : MonoBehaviour {
 	
 				GetHealth (1.0f);
 				Debug.Log ("give health");
-
+			//Panel anmachen
+			healthPanel.SetActive (true);  
+			//methode um auszuschalten 
+			StartCoroutine (WaitToPanel1());
 			}
 	}
 
@@ -94,11 +108,19 @@ public class JumpHealth : MonoBehaviour {
 
 	}
 
-	//Methode um das Panel wieder auszuschalten
+	//Methode um das DamagePanel wieder auszuschalten
 	IEnumerator WaitToPanel()
 	{
 		yield return new WaitForSeconds (0.1f);
 		damagePanel.SetActive (false);
+
+	}
+
+	//Methode um das HealthPanel wieder auszuschalten
+	IEnumerator WaitToPanel1()
+	{
+		yield return new WaitForSeconds (0.1f);
+		healthPanel.SetActive (false);
 
 	}
 	}
