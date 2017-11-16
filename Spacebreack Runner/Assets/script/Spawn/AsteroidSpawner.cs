@@ -26,7 +26,7 @@ public class AsteroidSpawner : MonoBehaviour {
 			int radom = Random.Range (spawnMin, spawnMax);
 
 			counter = 0;
-			counterMax = Random.Range (2, 9);
+			counterMax = Random.Range (2, 5);
 			//Spawn cube herer
 			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 68), Random.Range (-2, 10), Random.Range (66, 300)), Quaternion.identity);
 			Destroy (t, 15f);
