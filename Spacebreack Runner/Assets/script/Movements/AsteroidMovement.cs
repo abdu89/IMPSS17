@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AsteroidMovement : MonoBehaviour {
 
+	public Transform player;
 
 	public float movementSpeed = 1.0f;
     //public float lifeTime = 6f;
@@ -13,8 +14,14 @@ public class AsteroidMovement : MonoBehaviour {
 
 	}
 
+	void Update(){
+		this.transform.rotation = Quaternion.LookRotation (transform.position - player.transform.position);
+
+	}
+
     void FixedUpdate()
     {
+		
 		//movementSpeed=Random.Range(1.0f,5.0f);
         Vector3 currentPosition = transform.position;
         transform.position = new Vector3(currentPosition.x, currentPosition.y,

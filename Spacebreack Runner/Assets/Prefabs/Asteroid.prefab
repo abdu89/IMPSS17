@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 135105280794242938}
   - component: {fileID: 64681917972415350}
   - component: {fileID: 54655239284168596}
+  - component: {fileID: 114424118419667208}
   - component: {fileID: 114790994034579568}
   m_Layer: 8
   m_Name: Asteroid
@@ -87,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1856704856928802}
   m_LocalRotation: {x: -0, y: -0.9998652, z: -0, w: 0.016422499}
-  m_LocalPosition: {x: 50.521, y: 4.2754, z: -12.443}
+  m_LocalPosition: {x: 50.521, y: 4.2754, z: -38.55}
   m_LocalScale: {x: -0.9284581, y: 1.0224956, z: 0.7748078}
   m_Children:
   - {fileID: 4882226248160162}
@@ -206,6 +207,18 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114424118419667208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1856704856928802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8470d96a6cc6174cb0619e860e74623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 4949827651866598, guid: 0e1b63d0b43495442a2840ab92550e14, type: 2}
 --- !u!114 &114790994034579568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,7 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed627d481d070dd49a87dff09bea80d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
+  player: {fileID: 4949827651866598, guid: 0e1b63d0b43495442a2840ab92550e14, type: 2}
+  movementSpeed: 10
 --- !u!135 &135105280794242938
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -333,7 +347,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1577211940
+  randomSeed: -1991697703
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -423,7 +437,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.4636678, g: 0.9411765, b: 0.5459969, a: 1}
+      maxColor: {r: 0.991, g: 0.5962966, b: 0.19522703, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -2539,7 +2553,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.059, b: 0.03676468, a: 1}
+        key0: {r: 1, g: 0.58823526, b: 0.03676468, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
