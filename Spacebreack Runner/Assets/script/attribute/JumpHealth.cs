@@ -46,7 +46,7 @@ public class JumpHealth : MonoBehaviour {
 
 	void Die()
 	{
-		SceneManager.LoadScene ("GameOverScene");
+		SceneManager.LoadScene ("GameOver");
 	}
 
 	public void OnTriggerEnter(Collider other)
