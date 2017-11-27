@@ -129,19 +129,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.19781412
       objectReference: {fileID: 0}
     - target: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.98023957
       objectReference: {fileID: 0}
     - target: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
       propertyPath: m_RootOrder
@@ -162,6 +162,25 @@ Prefab:
       propertyPath: healthPanel
       value: 
       objectReference: {fileID: 1219009162}
+    - target: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 22.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 136052127135296934, guid: f714659f6923a604788bc2038f54cbb0,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.26597264
+      objectReference: {fileID: 0}
+    - target: {fileID: 136052127135296934, guid: f714659f6923a604788bc2038f54cbb0,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.50000066
+      objectReference: {fileID: 0}
+    - target: {fileID: 136052127135296934, guid: f714659f6923a604788bc2038f54cbb0,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.051621377
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
   m_IsPrefabParent: 0
