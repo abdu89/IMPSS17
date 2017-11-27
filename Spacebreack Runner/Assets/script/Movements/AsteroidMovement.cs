@@ -6,7 +6,7 @@ public class AsteroidMovement : MonoBehaviour {
 
 	public Transform player;
 
-	public float movementSpeed = 1.0f;
+	public float movementSpeed = 10.0f;
     //public float lifeTime = 6f;
 
 	void Start () {

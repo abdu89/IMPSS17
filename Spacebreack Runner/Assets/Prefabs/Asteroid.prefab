@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8470d96a6cc6174cb0619e860e74623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 4949827651866598, guid: 0e1b63d0b43495442a2840ab92550e14, type: 2}
+  Player: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
 --- !u!114 &114790994034579568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed627d481d070dd49a87dff09bea80d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 4949827651866598, guid: 0e1b63d0b43495442a2840ab92550e14, type: 2}
+  player: {fileID: 4665494575601812, guid: f714659f6923a604788bc2038f54cbb0, type: 2}
   movementSpeed: 10
 --- !u!135 &135105280794242938
 SphereCollider:
@@ -295,7 +295,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378459871013054}
   serializedVersion: 5
-  lengthInSec: 0.1
+  lengthInSec: 0.3
   simulationSpeed: 1
   looping: 1
   prewarm: 0
@@ -347,7 +347,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1991697703
+  randomSeed: 723693905
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -437,7 +437,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.991, g: 0.5962966, b: 0.19522703, a: 1}
+      maxColor: {r: 0.991, g: 0.293669, b: 0.114956, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -989,7 +989,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -1249,7 +1249,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.6691177, g: 0.9726166, b: 1, a: 1}
+        key0: {r: 0, g: 1, b: 0.022000015, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1871,11 +1871,11 @@ ParticleSystem:
     inWorldSpace: 0
     dampen: 1
   NoiseModule:
-    enabled: 0
+    enabled: 1
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1996,12 +1996,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     separateAxes: 0
-    frequency: 0.5
+    frequency: 0.9
     damping: 1
     octaves: 1
     octaveMultiplier: 0.5
     octaveScale: 2
-    quality: 2
+    quality: 1
     scrollSpeed:
       serializedVersion: 2
       minMaxState: 0
@@ -2553,7 +2553,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.58823526, b: 0.03676468, a: 1}
+        key0: {r: 0.347, g: 0, b: 0.01601528, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
