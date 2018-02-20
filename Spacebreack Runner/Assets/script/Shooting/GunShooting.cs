@@ -31,6 +31,10 @@ public class GunShooting : MonoBehaviour {
 
     void Update()
     {
+		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+		{
+			Fire();
+		}
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
