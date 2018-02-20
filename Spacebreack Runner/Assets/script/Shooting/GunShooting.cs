@@ -21,7 +21,7 @@ public class GunShooting : MonoBehaviour {
         GameObject tempBullet = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
         Rigidbody tempRB = tempBullet.GetComponent<Rigidbody>();
         tempRB.AddForce(tempRB.transform.forward * bulletSpeed);
-        Destroy(tempBullet, 0.5f);
+        Destroy(tempBullet, 1.0f);
 
         //Play Audio
         bulletAudio.Play();
