@@ -19,6 +19,5 @@ public class CubeSpawner2 : MonoBehaviour {
             //Spawn cube here
             Instantiate(toSpawn, new Vector3(0, 20, 0), Quaternion.identity);
         }
-        
 	}
 }
