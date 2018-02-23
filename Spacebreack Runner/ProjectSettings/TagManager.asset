@@ -12,6 +12,7 @@ TagManager:
   - gi
   - bullet
   - DAMAGE
+  - bull
   layers:
   - Default
   - TransparentFX

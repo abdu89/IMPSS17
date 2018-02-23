@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: f67c7a42dc4c54ee8bc8da9b11748961
-  - enabled: 1
-    path: Assets/Scenes/Erste Scene3.unity
-    guid: 2ce30e3f3b8eb9749a51f04d878d4860
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: ef147b04b938a45eb81bc369f862c2e9
@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene 2.unity
     guid: c9d6117138c32844cb68e94beb98f2a4
+  - enabled: 1
+    path: Assets/Scenes/EndWin.unity
+    guid: 97e03c6280db53146ac06db937451c5a
