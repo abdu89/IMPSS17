@@ -5,10 +5,8 @@ using UnityEngine;
 public class LiveMovement : MonoBehaviour {
 
 	public static float movementSpeed = 0.5f;
-	//public float lifeTime = 6f;
 
 	void Start () {
-		//Destroy(gameObject, lifeTime);
 	}
 
 	void FixedUpdate()
@@ -17,6 +15,4 @@ public class LiveMovement : MonoBehaviour {
 		transform.position = new Vector3(currentPosition.x , currentPosition.y,
 			currentPosition.z - movementSpeed);
 	}
-
-
 }
