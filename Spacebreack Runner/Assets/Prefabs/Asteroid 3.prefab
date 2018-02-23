@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 114439736851811692}
   - component: {fileID: 114486822505459354}
   m_Layer: 8
-  m_Name: Asteroid 2
+  m_Name: Asteroid 3
   m_TagString: as
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

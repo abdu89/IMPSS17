@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4308299336049208}
   - component: {fileID: 114359394889677256}
   - component: {fileID: 114195277874806904}
+  - component: {fileID: 114842331951164228}
   m_Layer: 0
   m_Name: AsteroidSpawn 1
   m_TagString: Untagged
@@ -47,12 +48,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1305336434620462}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8470d96a6cc6174cb0619e860e74623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 4949827651866598, guid: 0e1b63d0b43495442a2840ab92550e14, type: 2}
+  Player: {fileID: 4448905716989418, guid: ba393d41031402042bcdb004819c066d, type: 2}
 --- !u!114 &114359394889677256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,6 +63,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 341f48c2d1818134fa69ae9b84e4be7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toSpawn: {fileID: 1646949540977130, guid: ba393d41031402042bcdb004819c066d, type: 2}
+--- !u!114 &114842331951164228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305336434620462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a937177178be4742a1d2591b1ad7302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   toSpawn: {fileID: 1646949540977130, guid: ba393d41031402042bcdb004819c066d, type: 2}
