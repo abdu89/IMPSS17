@@ -7,7 +7,7 @@ public class GunShootingDrei : MonoBehaviour {
     float bulletSpeed = 1100f;
     public GameObject bullet;
 	private int counter = 0;
-	private int counterMax = 40;
+	private int counterMax = 60;
     AudioSource bulletAudio;
 
     void Start()
@@ -23,7 +23,7 @@ public class GunShootingDrei : MonoBehaviour {
         GameObject tempBullet = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
         Rigidbody tempRB = tempBullet.GetComponent<Rigidbody>();
         tempRB.AddForce(tempRB.transform.forward * bulletSpeed);
-        Destroy(tempBullet, 1.0f);
+        Destroy(tempBullet, 10.0f);
 
         //Play Audio
         bulletAudio.Play();
@@ -55,7 +55,7 @@ public class GunShootingDrei : MonoBehaviour {
 		if (counter == counterMax) {
 
 			counter = 0;
-			counterMax = Random.Range (1, 40);
+			counterMax = Random.Range (20, 60);
 			Fire();
 		}
 
