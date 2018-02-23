@@ -72,9 +72,9 @@ public class JumpHealth : MonoBehaviour {
 			StartCoroutine (WaitToPanel());
 		}
 
-		if (other.gameObject.tag == "fa") 
+		if (other.gameObject.tag == "win2") 
 		{
-			SceneManager.LoadScene ("Win");
+			SceneManager.LoadScene ("Win_2");
 		}
 
 		if (other.gameObject.tag == "gi") 

@@ -13,6 +13,7 @@ TagManager:
   - bullet
   - DAMAGE
   - bull
+  - win2
   layers:
   - Default
   - TransparentFX
