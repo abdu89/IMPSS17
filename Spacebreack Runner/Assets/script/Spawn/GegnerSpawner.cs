@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidSpawner : MonoBehaviour {
+public class GegnerSpawner : MonoBehaviour {
 
 	public GameObject toSpawn;
 	private int counter = 0;
@@ -25,10 +25,10 @@ public class AsteroidSpawner : MonoBehaviour {
 			counter = 0;
 			counterMax = 150;
 			//Spawn cube here
-			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 68), Random.Range (-2, 10), Random.Range (66, 300)), Quaternion.identity);
+			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 60), Random.Range (-1, 10), Random.Range (22, 300)), Quaternion.identity);
 			Destroy (t, 15f);
 			Debug.Log (t);
-            t.GetComponent<AsteroidMovement>().movementSpeed = Random.Range(0.4f, 2.4f);
+            t.GetComponent<GegnerMovement>().movementSpeed = Random.Range(0.01f, 0.3f);
         }
 	
 
