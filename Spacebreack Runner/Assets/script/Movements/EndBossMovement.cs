@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AsteroidMovement : MonoBehaviour {
+public class EndBossMovement : MonoBehaviour {
 
 	public Transform player;
 
-	public float movementSpeed = 10.0f;
-    //public float lifeTime = 6f;
+	public float movementSpeed = 0.01f;
+
 
 	void Start () {
-        //Destroy(gameObject, lifeTime);
 
 	}
 
@@ -22,10 +21,9 @@ public class AsteroidMovement : MonoBehaviour {
     void FixedUpdate()
     {
 		
-		//movementSpeed=Random.Range(1.0f,5.0f);
         Vector3 currentPosition = transform.position;
-        transform.position = new Vector3(currentPosition.x, currentPosition.y,
-            currentPosition.z - movementSpeed);
+        transform.position = new Vector3(movementSpeed, movementSpeed,
+            movementSpeed);
     }
 
 
