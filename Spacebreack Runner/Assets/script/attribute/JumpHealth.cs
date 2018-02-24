@@ -11,6 +11,7 @@ public class JumpHealth : MonoBehaviour {
 	private int counterMax = 50;
 	public GameObject playerDamage;
 	public GameObject damagePanel;
+	public GameObject healtPanel;
 
 
 	// Use this for initialization
@@ -88,6 +89,8 @@ public class JumpHealth : MonoBehaviour {
 				GetHealth (1.0f);
 				Debug.Log ("give health");
 			//Panel anmachen
+			healtPanel.SetActive (true);  
+
 			//methode um auszuschalten 
 			StartCoroutine (WaitToPanel1());
 			}
@@ -118,6 +121,7 @@ public class JumpHealth : MonoBehaviour {
 	IEnumerator WaitToPanel1()
 	{
 		yield return new WaitForSeconds (0.1f);
+		healtPanel.SetActive (false);
 
 	}
 	}

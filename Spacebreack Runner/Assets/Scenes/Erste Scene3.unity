@@ -2306,6 +2306,11 @@ Prefab:
       propertyPath: m_Name
       value: PLAYER
       objectReference: {fileID: 0}
+    - target: {fileID: 114223750233405238, guid: 53101bfc94ab8354eb99a49f4252f92f,
+        type: 2}
+      propertyPath: healtPanel
+      value: 
+      objectReference: {fileID: 1219009162}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53101bfc94ab8354eb99a49f4252f92f, type: 2}
   m_IsPrefabParent: 0
