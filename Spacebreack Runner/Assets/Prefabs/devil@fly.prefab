@@ -638,6 +638,7 @@ GameObject:
   - component: {fileID: 4879087209887916}
   - component: {fileID: 95165441651076428}
   - component: {fileID: 114998138295817236}
+  - component: {fileID: 65440635723609434}
   m_Layer: 0
   m_Name: devil@fly
   m_TagString: as
@@ -1677,8 +1678,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784165471715798}
-  m_LocalRotation: {x: -0, y: -0.9999834, z: -0, w: -0.005763672}
-  m_LocalPosition: {x: 53.7, y: 0.39999962, z: 60}
+  m_LocalRotation: {x: -0, y: 0.999065, z: -0, w: 0.04323405}
+  m_LocalPosition: {x: 50.867603, y: 0.39999962, z: 4.9229126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4214958169020994}
@@ -1789,13 +1790,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1577152060186014}
-  m_LocalRotation: {x: -0.028445294, y: -0.063766114, z: 0.0068569984, w: 0.9975358}
-  m_LocalPosition: {x: 0.009000465, y: 0.735, z: 0.70099926}
+  m_LocalRotation: {x: 0.028440809, y: 0.064420015, z: -0.0068756426, w: -0.9974938}
+  m_LocalPosition: {x: 0.13999876, y: 0.6600001, z: -0.63999987}
   m_LocalScale: {x: 6.3848014, y: 4.5713186, z: 4.492744}
   m_Children: []
   m_Father: {fileID: 4879087209887916}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -3.203, y: 352.657, z: 0.99300003}
+  m_LocalEulerAnglesHint: {x: -3.2020001, y: 712.582, z: 0.99700004}
 --- !u!4 &4993772468131068
 Transform:
   m_ObjectHideFlags: 1
@@ -1813,6 +1814,18 @@ Transform:
   m_Father: {fileID: 4759587570964466}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65440635723609434
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784165471715798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.3441072, z: 1}
+  m_Center: {x: 0, y: 0.6720536, z: 0}
 --- !u!82 &82644007765304948
 AudioSource:
   m_ObjectHideFlags: 1

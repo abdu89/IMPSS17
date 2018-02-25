@@ -77,7 +77,13 @@ public class JumpHealth : MonoBehaviour {
 			SceneManager.LoadScene ("Win_2");
 		}
 
-		if (other.gameObject.tag == "gi") 
+        if (other.gameObject.tag == "fa")
+        {
+            SceneManager.LoadScene("Win");
+        }
+
+
+        if (other.gameObject.tag == "gi") 
 		{
 		
 			GetDamage (1.0f);

@@ -25,10 +25,10 @@ public class GegnerSpawner : MonoBehaviour {
 			counter = 0;
 			counterMax = 150;
 			//Spawn cube here
-			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 60), Random.Range (-1, 10), Random.Range (22, 300)), Quaternion.identity);
-			Destroy (t, 15f);
+			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 60), Random.Range (-1, 10), Random.Range (22, 200)), Quaternion.identity);
+			Destroy (t, 30f);
 			Debug.Log (t);
-            t.GetComponent<GegnerMovement>().movementSpeed = Random.Range(0.01f, 0.3f);
+            t.GetComponent<GegnerMovement>().movementSpeed = Random.Range(0.1f, 0.4f);
         }
 	
 
