@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 114998138295817236}
   - component: {fileID: 65440635723609434}
   - component: {fileID: 54122594744378612}
+  - component: {fileID: 136888961875731394}
   m_Layer: 0
   m_Name: devil@fly
   m_TagString: as
@@ -1823,8 +1824,8 @@ Rigidbody:
   m_GameObject: {fileID: 1784165471715798}
   serializedVersion: 2
   m_Mass: 8
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 2
+  m_AngularDrag: 1.5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1840,8 +1841,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.50919706, y: 0.7943363, z: 0.66177565}
-  m_Center: {x: 0.022238525, y: 0.69022965, z: 0.0324326}
+  m_Size: {x: 0.64765054, y: 1.7436476, z: 0.66177565}
+  m_Center: {x: 0.036987662, y: 1.1648853, z: 0.032432586}
 --- !u!82 &82644007765304948
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1950,7 +1951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed10db98ad03b924ba84bd51c08807ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1341323357016522, guid: e2248a0a51e90fd4582f609640d70a6b, type: 2}
+  bullet: {fileID: 1349117056245356, guid: 50def827ca73e8046a20161c94d22ce1, type: 2}
 --- !u!114 &114998138295817236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1964,6 +1965,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4879087209887916}
   movementSpeed: 0.1
+--- !u!136 &136888961875731394
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784165471715798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.7520503
+  m_Height: 2.5511925
+  m_Direction: 1
+  m_Center: {x: 0.16037595, y: 1.3198658, z: 3.4182535e-10}
 --- !u!137 &137296228076533420
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
