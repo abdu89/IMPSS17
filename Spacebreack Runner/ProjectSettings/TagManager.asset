@@ -14,6 +14,7 @@ TagManager:
   - DAMAGE
   - bull
   - win2
+  - vorWand
   layers:
   - Default
   - TransparentFX
