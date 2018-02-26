@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4196619795178656}
   - component: {fileID: 33896041843209084}
   - component: {fileID: 23059312729548040}
-  - component: {fileID: 135567181727935798}
   - component: {fileID: 114559713584483584}
   - component: {fileID: 54609496077667914}
-  - component: {fileID: 135342371923508298}
+  - component: {fileID: 135369165823772938}
+  - component: {fileID: 135263984872000634}
   m_Layer: 0
   m_Name: Asteroid 05
   m_TagString: as
@@ -55,8 +55,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1501372046434534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.963387, y: 0.4105773, z: 69.445}
-  m_LocalScale: {x: 52.5, y: 68.6, z: 70.10908}
+  m_LocalPosition: {x: 48.299988, y: 1.1256, z: -11.364365}
+  m_LocalScale: {x: 73.80014, y: 112.748245, z: 143.45833}
   m_Children:
   - {fileID: 4236630205928344}
   m_Father: {fileID: 0}
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4196619795178656}
   movementSpeed: 10
---- !u!135 &135342371923508298
+--- !u!135 &135263984872000634
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -190,9 +190,9 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.014212947
-  m_Center: {x: 9.313225e-10, y: 0.000000019092113, z: 0}
---- !u!135 &135567181727935798
+  m_Radius: 0.0088454075
+  m_Center: {x: -0.0009939355, y: -0.0010590464, z: 0}
+--- !u!135 &135369165823772938
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -202,5 +202,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.009918343
-  m_Center: {x: 0.0000000022706532, y: 0.000000019115193, z: 0.0014700735}
+  m_Radius: 0.009333139
+  m_Center: {x: -0.001988291, y: -0.0010254834, z: 0.0022571369}
