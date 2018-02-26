@@ -82,6 +82,11 @@ public class JumpHealth : MonoBehaviour {
             SceneManager.LoadScene("Win");
         }
 
+        if (other.gameObject.tag == "vorWand")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+
 
         if (other.gameObject.tag == "gi") 
 		{
