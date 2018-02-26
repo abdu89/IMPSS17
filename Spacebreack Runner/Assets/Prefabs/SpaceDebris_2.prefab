@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 135693495300907252}
   - component: {fileID: 114833863637382060}
   m_Layer: 0
-  m_Name: Ultimate
+  m_Name: SpaceDebris_2
   m_TagString: as
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

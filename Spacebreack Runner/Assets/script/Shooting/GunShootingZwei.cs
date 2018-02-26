@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunShootingZwei : MonoBehaviour {
 
-    float bulletSpeed = -1200f;
+    float bulletSpeed = -1500f;
     public GameObject bullet;
 	private int counter = 0;
 	private int counterMax = 200;
@@ -55,10 +55,10 @@ public class GunShootingZwei : MonoBehaviour {
 		if (counter == counterMax) {
 
 			counter = 0;
-			counterMax = 200;
+			counterMax = 150;
 			Fire();
-            Fire();
-            Fire();
+            //Fire();
+            //Fire();
 
 
         }
