@@ -25,7 +25,7 @@ public class AsteroidSpawner : MonoBehaviour {
 			counter = 0;
 			counterMax = Random.Range (10, 30);
 			//Spawn cube here
-			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 60), Random.Range (-1, 10), Random.Range (66, 200)), Quaternion.identity);
+			GameObject t = Instantiate (toSpawn, new Vector3 (Random.Range (45, 60), Random.Range (-1, 10), Random.Range (66, 150)), Quaternion.identity);
 			Destroy (t, 15f);
 			Debug.Log (t);
             t.GetComponent<AsteroidMovement>().movementSpeed = Random.Range(0.4f, 2.4f);
