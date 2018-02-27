@@ -27,7 +27,18 @@ public class ScoreNum : MonoBehaviour {
         if (score > PlayerPrefs.GetInt("Highscore",0))
         {
             PlayerPrefs.SetInt("Highscore", score);
+            highScoreNum.text = score.ToString();
         }
 
 	}
+    public void HighScoreReset()
+    {
+        PlayerPrefs.DeleteKey("Highscore");
+        highScoreNum.text = "0";
+    }
+    public void ScoreReset()
+    {
+        PlayerPrefs.DeleteKey("Score");
+        scoreNum.text = "0";
+    }
 }
