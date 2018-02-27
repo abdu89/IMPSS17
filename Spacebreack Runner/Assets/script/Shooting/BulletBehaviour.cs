@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour {
 
+    public int scoreValue = 1;
     AudioSource collisionAudio;
     
     void Start()
@@ -21,6 +22,7 @@ public class BulletBehaviour : MonoBehaviour {
 
         if (collision.transform.tag == "as")
         {
+            ScoreNum.score += scoreValue;
             Destroy(collision.gameObject);
             collisionAudio.Play();
             gameObject.SetActive(false);
