@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunShootingDrei : MonoBehaviour {
 
-    float bulletSpeed = 1100f;
+    float bulletSpeed = 1300f;
     public GameObject bullet;
 	private int counter = 0;
 	private int counterMax = 100;
@@ -44,7 +44,7 @@ public class GunShootingDrei : MonoBehaviour {
 		if (counter == counterMax) {
 
 			counter = 0;
-			counterMax = Random.Range (20, 100);
+			counterMax = Random.Range (20, 40);
 			Fire();
 		}
 			
