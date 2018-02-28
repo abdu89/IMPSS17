@@ -15,6 +15,8 @@ TagManager:
   - bull
   - win2
   - vorWand
+  - wand
+  - wandCeiling
   layers:
   - Default
   - TransparentFX

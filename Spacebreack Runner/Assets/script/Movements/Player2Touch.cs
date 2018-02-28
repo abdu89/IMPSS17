@@ -25,8 +25,17 @@ public class Player2Touch : MonoBehaviour
             transform.Translate(touchDeltaPosition.x * speed, touchDeltaPosition.y * speed, 0);
         }
     }
-
-
-
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "wand")
+        {
+            transform.position = new Vector3(53.25F, 3.89F, -18.48F);
+            print(transform.position.x);
+            //body.AddForce(Vector3.right * 30);
+        }
     }
+
+
+
+}
 
