@@ -23,14 +23,6 @@ public class PlayerTouch : MonoBehaviour
 		}
 	}
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "wand")
-        {
-            transform.position = new Vector3(0, 0, 0);
-            print(transform.position.x);
-            body.AddForce(Vector3.right * 30);
-        }
-    }
+    
 
 }

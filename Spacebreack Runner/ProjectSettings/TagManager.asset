@@ -17,6 +17,9 @@ TagManager:
   - vorWand
   - wand
   - wandCeiling
+  - wandLeft
+  - wandRight
+  - wandGround
   layers:
   - Default
   - TransparentFX
