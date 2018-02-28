@@ -32,6 +32,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1207826196410602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224294535284152566}
+  - component: {fileID: 108086898549233424}
+  - component: {fileID: 222141264673334970}
+  - component: {fileID: 135236336529391420}
+  m_Layer: 0
+  m_Name: Area Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4585563542567924
 Transform:
   m_ObjectHideFlags: 1
@@ -39,9 +57,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071691147688676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.43762, y: 0.39999962, z: -14.523285}
-  m_LocalScale: {x: 0.16258526, y: 0.16910858, z: 0.17033985}
-  m_Children: []
+  m_LocalPosition: {x: 51.980766, y: 0.044526, z: -13.354}
+  m_LocalScale: {x: 0.26355386, y: 0.2517152, z: 0.24132273}
+  m_Children:
+  - {fileID: 224294535284152566}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -121,7 +140,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 31.848396
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -181,6 +200,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!108 &108086898549233424
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207826196410602}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 3
+  m_Color: {r: 0.8862746, g: 0.8862746, b: 0.8862746, a: 0.241}
+  m_Intensity: 1.24
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_AreaSize: {x: 0.67078555, y: 0.7}
+  m_BounceIntensity: 20
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114046734574202752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -192,6 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e4850e48f980849a94c6f8e9725150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!135 &135203905374335730
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -204,3 +260,39 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &135236336529391420
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207826196410602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.001174554
+  m_Center: {x: -0.00022436252, y: -0.00016605202, z: 0.00017558645}
+--- !u!222 &222141264673334970
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207826196410602}
+--- !u!224 &224294535284152566
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207826196410602}
+  m_LocalRotation: {x: -0.13722223, y: -0.06770497, z: 0.9850419, w: -0.07923799}
+  m_LocalPosition: {x: 0, y: 0, z: 0.012065037}
+  m_LocalScale: {x: 983.40466, y: 566.4895, z: 97.594864}
+  m_Children: []
+  m_Father: {fileID: 4585563542567924}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -188.924, y: -195.23601, z: 8.001999}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.014178276, y: -0.10951246}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}

@@ -19,7 +19,7 @@ public class EndBossMovement : MonoBehaviour {
         counter++;
         Debug.Log(counter);
 
-        if (counter == 750)
+        if (counter == 1000)
         {
         counter = 0;
         }
@@ -41,6 +41,8 @@ public class EndBossMovement : MonoBehaviour {
         }
 
 
+      
+
 
         if (counter >= 100 && counter <= 150)
         {
@@ -60,8 +62,19 @@ public class EndBossMovement : MonoBehaviour {
 
 
 
+        if (counter >= 270 && counter <= 330)
+        {
+            movementSpeed = Random.Range(0.01f, 0.15f);
+            Vector3 currentPosition = transform.position;
+            transform.position = new Vector3(currentPosition.x, currentPosition.y,
+                currentPosition.z - -movementSpeed);
 
-        if (counter >= 280  && counter <= 390)
+        }
+
+
+
+
+        if (counter >= 430  && counter <= 530)
         {
             Vector3 currentPosition = transform.position;
             transform.position = new Vector3(currentPosition.x - movementSpeed, currentPosition.y,
@@ -69,7 +82,7 @@ public class EndBossMovement : MonoBehaviour {
 
             movementSpeed = Random.Range(0.01f, 0.15f);
         }
-        if (counter >= 360 && counter <= 400)
+        if (counter >= 500 && counter <= 540)
         {
             Vector3 currentPosition = transform.position;
             transform.position = new Vector3(currentPosition.x, currentPosition.y - -movementSpeed,
@@ -78,7 +91,7 @@ public class EndBossMovement : MonoBehaviour {
         }
 
 
-        if (counter >= 470 && counter <= 560)
+        if (counter >= 540 && counter <= 640)
         {
             Vector3 currentPosition = transform.position;
             transform.position = new Vector3(currentPosition.x - -movementSpeed, currentPosition.y,
@@ -86,13 +99,23 @@ public class EndBossMovement : MonoBehaviour {
             movementSpeed = Random.Range(0.01f, 0.15f);
         }
 
-        if (counter >= 560 && counter <= 600)
+        if (counter >= 530 && counter <= 670)
         {
             Vector3 currentPosition = transform.position;
             transform.position = new Vector3(currentPosition.x, currentPosition.y - movementSpeed,
                 currentPosition.z);
             movementSpeed = Random.Range(0.01f, 0.15f);
         }
+
+
+
+        if (counter >= 740 && counter <= 840)
+        {
+            Vector3 currentPosition = transform.position;
+            transform.position = new Vector3(currentPosition.x, currentPosition.y,
+                currentPosition.z - movementSpeed);
+        }
+
 
     }
 
@@ -137,4 +160,4 @@ public class EndBossMovement : MonoBehaviour {
             }
         }
     }*/
-    }
+}

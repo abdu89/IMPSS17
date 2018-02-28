@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1521846750932184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.93922, y: 1.6701, z: 16.374031}
+  m_LocalPosition: {x: 53.368908, y: -0.040028572, z: -12.181183}
   m_LocalScale: {x: 1.0684431, y: 0.5247145, z: 1.0324591}
   m_Children:
   - {fileID: 224468424244365814}
@@ -133,7 +133,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 32d36264a1f3d40bb83a3bbf050b30b1, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4292877595
+    rgba: 4278190080
 --- !u!108 &108409385439436188
 Light:
   m_ObjectHideFlags: 1
@@ -254,7 +254,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1604802889
+  randomSeed: -2058600436
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -344,7 +344,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.241, g: 1, b: 0.5917104, a: 1}
+      maxColor: {r: 0.241, g: 0.6231174, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
