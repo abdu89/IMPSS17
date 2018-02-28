@@ -33,17 +33,6 @@ public class GunShootingZwei : MonoBehaviour {
 
     void Update()
     {
-
-		//Fire();
-		/*if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-		{
-			Fire();
-		}
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Fire();
-        }*/
     }
 
 
@@ -57,8 +46,6 @@ public class GunShootingZwei : MonoBehaviour {
 			counter = 0;
 			counterMax = 150;
 			Fire();
-            //Fire();
-            //Fire();
 
 
         }

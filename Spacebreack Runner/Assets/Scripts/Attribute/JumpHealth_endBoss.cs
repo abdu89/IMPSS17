@@ -14,7 +14,6 @@ public class JumpHealth_endBoss : MonoBehaviour {
 	public GameObject healthPanel_endBoss;
 
 
-	// Use this for initialization
 	void Start () {
 		healthBar_endBoss.fillAmount = 1f;
 	}
@@ -30,14 +29,7 @@ public class JumpHealth_endBoss : MonoBehaviour {
 
 
 	}
-
-
-
-
-	
-
-
-
+		
 	void GetHealth(float health_endBoss)
 	{
 		healthBar_endBoss.fillAmount += health_endBoss;
@@ -54,7 +46,6 @@ public class JumpHealth_endBoss : MonoBehaviour {
 		if (other.gameObject.tag == "bull") 
 		{
 			GetDamage (0.03f);
-		//	Instantiate (playerDamage, transform.position, Quaternion.Euler (new Vector3 (0,0 , 0)));
 			Debug.Log ("VORSICHT!");
 			//Panel anmachen
 			damagePanel_endBoss.SetActive (true);  
@@ -71,7 +62,6 @@ public class JumpHealth_endBoss : MonoBehaviour {
 
 	}
 
-	// Update is called once per frame
 	void Update () {
 		StartCoroutine (WaitToDamage());
 
@@ -92,4 +82,4 @@ public class JumpHealth_endBoss : MonoBehaviour {
 		healthPanel_endBoss.SetActive (false);
 
 	}
-	}
+}

@@ -33,17 +33,6 @@ public class GunShootingDrei : MonoBehaviour {
 
     void Update()
     {
-
-		//Fire();
-		/*if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-		{
-			Fire();
-		}
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Fire();
-        }*/
     }
 
 
@@ -58,10 +47,7 @@ public class GunShootingDrei : MonoBehaviour {
 			counterMax = Random.Range (20, 100);
 			Fire();
 		}
-
-
+			
 	}
-
-
-
+		
 }

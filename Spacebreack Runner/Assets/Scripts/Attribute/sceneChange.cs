@@ -7,10 +7,8 @@ public class sceneChange : MonoBehaviour {
 
 
 	void Start () {
-
 	}
-	
-	// Update is called once per frame
+
 	public  void sceneChangeTo (string change) {
 		SceneManager.LoadScene(change);
 	}

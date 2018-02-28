@@ -7,11 +7,8 @@ public class AsteroidMovement : MonoBehaviour {
 	public Transform player;
 
 	public float movementSpeed = 10.0f;
-    //public float lifeTime = 6f;
 
 	void Start () {
-        //Destroy(gameObject, lifeTime);
-
 	}
 
 	void Update(){
@@ -22,8 +19,7 @@ public class AsteroidMovement : MonoBehaviour {
     void FixedUpdate()
     {
 		
-		//movementSpeed=Random.Range(1.0f,5.0f);
-        Vector3 currentPosition = transform.position;
+		Vector3 currentPosition = transform.position;
         transform.position = new Vector3(currentPosition.x, currentPosition.y,
             currentPosition.z - movementSpeed);
     }

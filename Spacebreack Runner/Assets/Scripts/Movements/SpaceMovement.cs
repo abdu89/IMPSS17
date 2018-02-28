@@ -8,7 +8,6 @@ public class SpaceMovement : MonoBehaviour {
 	//public float lifeTime = 6f
 
 	void Start () {
-		//Destroy(gameObject, lifeTime);
 	}
 
 	void FixedUpdate()
@@ -17,6 +16,4 @@ public class SpaceMovement : MonoBehaviour {
 		transform.position = new Vector3(currentPosition.x - movementSpeed, currentPosition.y,
 			currentPosition.z - movementSpeed);
 	}
-
-
 }

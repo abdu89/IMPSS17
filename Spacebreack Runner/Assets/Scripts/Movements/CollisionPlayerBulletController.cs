@@ -6,7 +6,6 @@ public class CollisionPlayerBulletController : MonoBehaviour
 {
 	void DestroyComponent()
 	{
-		// Removes the rigidbody from the game object
 		Destroy(GetComponent<Rigidbody>());
 	}
 		

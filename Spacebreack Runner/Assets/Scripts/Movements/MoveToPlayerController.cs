@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveToPlayerController : MonoBehaviour {
 
 	public float speed = 0.2F;
-	// Use this for initialization
+
 	void Start () {
 
 		GameObject gaOb = GameObject.FindWithTag ("as");

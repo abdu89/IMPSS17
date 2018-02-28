@@ -11,8 +11,6 @@ public class EndBossMovement : MonoBehaviour {
 	public float movementSpeed = 0.01f;
 
 	void Start () {
-        //Destroy(gameObject, lifeTime);
-
 	}
 
 	void Update(){
@@ -115,49 +113,5 @@ public class EndBossMovement : MonoBehaviour {
             transform.position = new Vector3(currentPosition.x, currentPosition.y,
                 currentPosition.z - movementSpeed);
         }
-
-
     }
-
-    /*public void OnTriggerEnter(Collider other)
-    {
-        counter++;
-        Debug.Log(counter);
-        if (counter <= 50)
-        {
-
-            if (other.gameObject.tag != "wand")
-            {
-                Vector3 currentPosition = transform.position;
-                transform.position = new Vector3(currentPosition.x - movementSpeed, currentPosition.y,
-                    currentPosition.z); ;
-            }
-
-            if (other.gameObject.tag == "wand")
-            {
-                transform.position = new Vector3(59.1F, 2.65F, -2.65F);
-                print(transform.position.x);
-            }
-        }
-
-
-        if (counter <= 200 && counter >= 100)
-        {
-            
-
-            if (other.gameObject.tag != "wandCeiling")
-            {
-                Vector3 currentPosition = transform.position;
-                transform.position = new Vector3(currentPosition.x, currentPosition.y - -movementSpeed,
-                    currentPosition.z);
-            }
-
-            if (other.gameObject.tag == "wandCeiling")
-            {
-                counter = 0;
-                transform.position = new Vector3(59.1F, 2.65F, -2.65F);
-                print(transform.position.x);
-            }
-        }
-    }*/
 }

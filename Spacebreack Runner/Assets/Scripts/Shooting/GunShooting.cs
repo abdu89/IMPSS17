@@ -27,8 +27,7 @@ public class GunShooting : MonoBehaviour {
         bulletAudio.Play();
 
     }
-
-
+		
     void Update()
     {
 		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)

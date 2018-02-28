@@ -14,11 +14,9 @@ public class CameraMovement : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
 	void LateUpdate () {
 		moveVector = target.position + offset;
 
-		//moveVector.x = 0;
 		transform.position = moveVector;
 
 	}

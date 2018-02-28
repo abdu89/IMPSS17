@@ -13,9 +13,7 @@ public class JumpHealth : MonoBehaviour {
 	public GameObject damagePanel;
 	public GameObject healtPanel;
 
-
-	// Use this for initialization
-	void Start () {
+		void Start () {
 		healthBar.fillAmount = 1f;
 	}
 
@@ -28,22 +26,14 @@ public class JumpHealth : MonoBehaviour {
 			Die ();
 		}
 
-
 	}
-
-
-
-
-	
-
 
 
 	void GetHealth(float health)
 	{
 		healthBar.fillAmount += health;
 	}
-
-
+		
 	void Die()
 	{
 		SceneManager.LoadScene ("GameOver");
@@ -54,7 +44,6 @@ public class JumpHealth : MonoBehaviour {
 		if (other.gameObject.tag == "as") 
 		{
 			GetDamage (0.10f);
-		//	Instantiate (playerDamage, transform.position, Quaternion.Euler (new Vector3 (0,0 , 0)));
 			Debug.Log ("VORSICHT!");
 			//Panel anmachen
 			damagePanel.SetActive (true);  
@@ -64,7 +53,6 @@ public class JumpHealth : MonoBehaviour {
 		if (other.gameObject.tag == "b") 
 		{
 			GetDamage (0.10f);
-			//	Instantiate (playerDamage, transform.position, Quaternion.Euler (new Vector3 (0,0 , 0)));
 			Debug.Log ("VORSICHT!");
 			//Panel anmachen
 			damagePanel.SetActive (true);  
@@ -114,7 +102,6 @@ public class JumpHealth : MonoBehaviour {
 
 	}
 
-	// Update is called once per frame
 	void Update () {
 		StartCoroutine (WaitToDamage());
 
