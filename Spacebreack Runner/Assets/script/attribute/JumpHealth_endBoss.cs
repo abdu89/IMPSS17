@@ -53,7 +53,7 @@ public class JumpHealth_endBoss : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "bull") 
 		{
-			GetDamage (0.01f);
+			GetDamage (0.04f);
 		//	Instantiate (playerDamage, transform.position, Quaternion.Euler (new Vector3 (0,0 , 0)));
 			Debug.Log ("VORSICHT!");
 			//Panel anmachen
