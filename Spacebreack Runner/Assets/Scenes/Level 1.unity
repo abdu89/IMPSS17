@@ -326,6 +326,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1975969733577110, guid: 4dc967699c12f5f45b5e1d83a9cdba5c, type: 2}
+      propertyPath: m_Name
+      value: WallLimit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dc967699c12f5f45b5e1d83a9cdba5c, type: 2}
   m_IsPrefabParent: 0
@@ -1166,6 +1170,10 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.44
       objectReference: {fileID: 0}
+    - target: {fileID: 1924645470191726, guid: e3d2644cf3f7f044bb253a92f9a8bc3e, type: 2}
+      propertyPath: m_Name
+      value: Walls
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3d2644cf3f7f044bb253a92f9a8bc3e, type: 2}
   m_IsPrefabParent: 0
@@ -1540,7 +1548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516167203}
   m_Layer: 0
-  m_Name: obstacle
+  m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3065,7 +3073,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: MainMenu_2
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
